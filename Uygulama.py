@@ -36,7 +36,7 @@ def doviz_penceresi(kullanici, refresh=None):
     pencere.title("Döviz İşlemleri")
     pencere.geometry("300x350")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
   
 
     tk.Label(pencere, text="Baz Para:", font=("Segoe UI", 11, "bold"), bg="#E3F2FD").pack()
@@ -147,7 +147,7 @@ def gecmis_penceresi(kullanici):
     pencere.title("Geçmiş İşlemler")
     pencere.geometry("500x400")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
  
 
     tk.Label(pencere, text="Geçmiş İşlemler", font=("Segoe UI", 15, "bold"), bg="#E3F2FD").pack(pady=10)
@@ -195,7 +195,7 @@ def para_penceresi(kullanici, refresh=None):
     pencere.title("Para İşlemleri")
     pencere.geometry("300x350")
     pencere.config(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
 
     tk.Label(pencere, text="İşlem Türü:", font=("Segoe UI", 11, "bold"), bg="#E3F2FD").pack()
     islem_tipi_var = tk.StringVar(value="Yatırma")
@@ -295,7 +295,7 @@ def havale_penceresi(gonderen_kullanici, refresh=None):
     pencere.title("Havale İşlemleri")
     pencere.geometry("450x400")
     pencere.config(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
 
 
     tk.Label(pencere, text="Alıcı Kullanıcı ID:", font=("Segoe UI", 10, "bold"), bg="#E3F2FD").pack()
@@ -392,7 +392,7 @@ def hesap_olustur():
     pencere.title("Hesap Oluştur")
     pencere.geometry("450x500")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
 
 
     tk.Label(pencere, text="Kullanıcı ID:", bg="#E3F2FD", font=("Segoe UI", 10, "bold")).pack()
@@ -510,7 +510,7 @@ def giris_yap():
     pencere.title("Giriş Yap")
     pencere.geometry("300x300")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
 
 
     
@@ -548,7 +548,7 @@ def giris_yap():
         pencere_sifre.title("Şifremi Unuttum")
         pencere_sifre.geometry("300x300")
         pencere_sifre.configure(bg="#E3F2FD")
-        pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+        pencere.iconbitmap("b_abc_bank_logo.ico")
 
 
                                
@@ -624,7 +624,7 @@ def banka_ekrani(kullanici):
     pencere.title("Banka İşlemleri")
     pencere.geometry("650x650")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+    pencere.iconbitmap("b_abc_bank_logo.ico")
 
 
     bilgiler = kullanicilar[kullanici]
@@ -750,7 +750,7 @@ root.geometry("400x300")
 root.config(bg="#E3F2FD")
 root.protocol("WM_DELETE_WINDOW", cikis)
 
-root.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
+root.iconbitmap("b_abc_bank_logo.ico")
 
 
 tk.Label(root, text="ABC Bank'a Hoş Geldiniz", font=("Segoe UI", 20,"bold"),fg="black",bg="#E3F2FD").pack(pady=30)
