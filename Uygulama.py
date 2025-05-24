@@ -36,7 +36,13 @@ def doviz_penceresi(kullanici, refresh=None):
     pencere.title("Döviz İşlemleri")
     pencere.geometry("300x350")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
+    
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
   
 
     tk.Label(pencere, text="Baz Para:", font=("Segoe UI", 11, "bold"), bg="#E3F2FD").pack()
@@ -147,7 +153,13 @@ def gecmis_penceresi(kullanici):
     pencere.title("Geçmiş İşlemler")
     pencere.geometry("500x400")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
+
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
  
 
     tk.Label(pencere, text="Geçmiş İşlemler", font=("Segoe UI", 15, "bold"), bg="#E3F2FD").pack(pady=10)
@@ -189,13 +201,18 @@ def gecmis_penceresi(kullanici):
     tk.Button(pencere, text="Kapat", command=pencere.destroy, width=15, fg="white", bg="#D32F2F", **buton_stil).pack(pady=5)
 
 #----------------------------------------PARA İŞLEMLERİ----------------------------------------------
-
 def para_penceresi(kullanici, refresh=None):
     pencere = tk.Toplevel()
     pencere.title("Para İşlemleri")
     pencere.geometry("300x350")
     pencere.config(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
+
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
 
     tk.Label(pencere, text="İşlem Türü:", font=("Segoe UI", 11, "bold"), bg="#E3F2FD").pack()
     islem_tipi_var = tk.StringVar(value="Yatırma")
@@ -239,7 +256,6 @@ def para_penceresi(kullanici, refresh=None):
     entry_miktar = tk.Entry(pencere)
     entry_miktar.pack()
 
-    
     def islem_yap():
         islem_tipi = islem_tipi_var.get()
         para_birimi = para_birimi_var.get()
@@ -289,13 +305,19 @@ def para_penceresi(kullanici, refresh=None):
               fg="white", bg="#D32F2F", command=pencere.destroy).pack()
 
 
-#--------------------------------HAVALE EKRANI-------------------------------------
+#--------------------------------HAVALE EKRANI------------------------------------
 def havale_penceresi(gonderen_kullanici, refresh=None):
     pencere = tk.Toplevel()
     pencere.title("Havale İşlemleri")
     pencere.geometry("450x400")
     pencere.config(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
+
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
 
 
     tk.Label(pencere, text="Alıcı Kullanıcı ID:", font=("Segoe UI", 10, "bold"), bg="#E3F2FD").pack()
@@ -387,13 +409,19 @@ def havale_penceresi(gonderen_kullanici, refresh=None):
 
 
 # -------------------------------HESAP OLUŞTURMA EKRANI------------------------------------
+
 def hesap_olustur():
     pencere = tk.Toplevel()
     pencere.title("Hesap Oluştur")
     pencere.geometry("450x500")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
 
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
 
     tk.Label(pencere, text="Kullanıcı ID:", bg="#E3F2FD", font=("Segoe UI", 10, "bold")).pack()
     entry_kullanici = tk.Entry(pencere)
@@ -510,10 +538,14 @@ def giris_yap():
     pencere.title("Giriş Yap")
     pencere.geometry("300x300")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
 
+    try:
+        img = Image.open("b_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
 
-    
     tk.Label(pencere, text="Kullanıcı ID:", bg="#E3F2FD", font=("Segoe UI", 10, "bold")).pack()
     entry_kullanici = tk.Entry(pencere)
     entry_kullanici.pack()
@@ -548,10 +580,7 @@ def giris_yap():
         pencere_sifre.title("Şifremi Unuttum")
         pencere_sifre.geometry("300x300")
         pencere_sifre.configure(bg="#E3F2FD")
-        pencere.iconbitmap("b_abc_bank_logo.png")
-
-
-                               
+        pencere.iconbitmap("b_abc_bank_logo.png")               
 
         tk.Label(pencere_sifre, text="İsminiz:",bg="#E3F2FD",font=("Segoe UI", 10,"bold")).pack()
         entry_ad = tk.Entry(pencere_sifre)
@@ -624,7 +653,13 @@ def banka_ekrani(kullanici):
     pencere.title("Banka İşlemleri")
     pencere.geometry("650x650")
     pencere.configure(bg="#E3F2FD")
-    pencere.iconbitmap("b_abc_bank_logo.png")
+
+    try:
+        img = Image.open("c_abc_bank_logo.png")
+        icon = ImageTk.PhotoImage(img)
+        pencere.iconphoto(True, icon)
+    except Exception as e:
+        print("Logo yüklenemedi:", e)
 
 
     bilgiler = kullanicilar[kullanici]
@@ -744,14 +779,20 @@ def yukle():
         print("Yükleme hatası:", e)
         kullanicilar = {}
 #--------------------------------------ANA EKRAN----------------------------------------
+from PIL import Image, ImageTk  # en üstte olmalı
+
 root = tk.Tk()
 root.title("ABC Bank")
 root.geometry("400x300")
 root.config(bg="#E3F2FD")
 root.protocol("WM_DELETE_WINDOW", cikis)
 
-root.iconbitmap("b_abc_bank_logo.png")
-
+try:
+    img = Image.open("b_abc_bank_logo.png")
+    icon = ImageTk.PhotoImage(img)
+    root.iconphoto(True, icon)
+except Exception as e:
+    print("Logo yüklenemedi:", e)
 
 tk.Label(root, text="ABC Bank'a Hoş Geldiniz", font=("Segoe UI", 20,"bold"),fg="black",bg="#E3F2FD").pack(pady=30)
 tk.Button(root, text="Hesap Oluştur", width=20, font=("Segoe UI", 12,"bold"), fg="white",bg="#1565C0",command=hesap_olustur).pack(pady=10)
