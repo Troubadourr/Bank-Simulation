@@ -16,6 +16,7 @@ All operations are simulated during the session.
 - Python 3  
 - tkinter (for GUI)  
 - Pillow (for images/logos)
+- ChatGPT
 
 ## ▶️ How to Run
 1. Download or clone the project repository:  
