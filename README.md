@@ -26,7 +26,7 @@ All operations are simulated during the session.
    cd Bank-Simulation
    
 3. Run the application:
-   Arayüz.py
+    python Arayüz.py
 
    
    
