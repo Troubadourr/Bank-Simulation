@@ -38,7 +38,7 @@ def doviz_penceresi(kullanici, refresh=None):
     pencere.configure(bg="#E3F2FD")
     pencere.iconbitmap(r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\b_abc_bank_logo.ico")
   
-    
+
     tk.Label(pencere, text="Baz Para:", font=("Segoe UI", 11, "bold"), bg="#E3F2FD").pack()
     baz_var = tk.StringVar(value="TRY")
 
