@@ -638,7 +638,7 @@ def banka_ekrani(kullanici):
 
     
     try:
-        logo_path = r"C:\Users\ardaa\Desktop\ADVANCED PHYTON PROJESİ\c_abc_bank_logo.png"
+        logo_path = "c_abc_bank_logo.png"
         logo = Image.open(logo_path)
         logo = logo.resize((230, 230), Image.Resampling.LANCZOS)
         logo_img = ImageTk.PhotoImage(logo)
